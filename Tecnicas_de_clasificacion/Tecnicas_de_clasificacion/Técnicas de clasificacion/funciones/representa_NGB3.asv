@@ -1,0 +1,13 @@
+function representa_NGB3(medias, desviaciones, probabilidadPriori)
+    x1 = sym('x1', 'real');
+    x2 = sym('x2', 'real');
+    x3 = sym('x3', 'real');
+    
+    X = [x1 ; x2 ; x3];
+
+    gaussianas1 = (1./ (sqrt(2 * pi) * desviaciones(:, 1))) .* exp(- (X - ) )
+
+
+  
+
+end

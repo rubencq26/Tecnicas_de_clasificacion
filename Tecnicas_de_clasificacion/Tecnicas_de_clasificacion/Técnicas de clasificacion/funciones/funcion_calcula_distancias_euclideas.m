@@ -1,0 +1,10 @@
+function [Distancias] = funcion_calcula_distancias_euclideas(X,MX)
+    X = X(:);
+    numPredictores = size(MX, 2);
+
+    if numPredictores == 2
+        Distancias = sqrt( (X(1) - MX(:,1)).^2 + (X(2) -MX(:,2)).^2 );
+    elseif numPredictores == 3
+        Distancias = sqrt( (X(1) - MX(:,1)).^2 + (X(2) -MX(:,2)).^2 + (X(3) - MX(:,3)).^2 );
+    end
+end
